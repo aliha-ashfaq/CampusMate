@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer.";
+
+
+
 export default function Home() {
   const [universities, setUniversities] = useState([]);
   const [budget, setBudget] = useState(0);
@@ -101,6 +105,8 @@ export default function Home() {
         ))}
       </div>
     </div>
+
+    <Footer/>
     </>
   );
 }
