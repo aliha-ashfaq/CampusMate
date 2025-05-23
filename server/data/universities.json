@@ -21,6 +21,6 @@
     "courses": ["CS", "EE", "Economics"],
     "fee": "Rs. 500,000/year",
     "about": "LUMS is a prestigious institution known for academic excellence.",
-    "image": "https://www.lums.edu.pk/sites/default/files/styles/landscape_744x420/public/2020-06/cover_4.jpg"
+    "image": "/images/LUMS-Main.jpg"
   }
 ]
