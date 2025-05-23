@@ -1,4 +1,12 @@
 [
+   {
+    "name": "live With Style Hostel",
+    "nearUniversity": "ucp",
+    "distance": "1.2 km",
+    "price": "Rs. 8,000/month",
+    "mess": false,
+    "sharing": "3-person"
+  },
   {
     "name": "Comfort Hostel",
     "nearUniversity": "ucp",

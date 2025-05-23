@@ -6,7 +6,7 @@ const Footer = () => {
             <a href="" style={{padding:"13px",background:"white",color:"#155CDE",fontWeight:"bold", borderRadius:"25px",marginTop:"60px"}}>Contact Us</a>
         </div>
 
-      <div style={{display:"flex",justifyContent:"space-between",marginTop:"35px",paddingBottom:"5px",paddingRight:"5px"}}>
+      <div style={{display:"flex",justifyContent:"space-between",marginTop:"35px",paddingBottom:"5px"}}>
         &copy; {new Date().getFullYear()} CampusMate. All rights reserved.
         <p>Privacy Policy and Terms</p>
       </div>

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const universities = require('../data/universities.json');
 const hostels = require('../data/hostels.json');
+const faqs = require('../data/faqs.json');
 
 router.get('/universities', (req, res) => {
   res.json(universities);
@@ -13,6 +14,10 @@ router.get('/universities/:id', (req, res) => {
 
   const relatedHostels = hostels.filter(h => h.nearUniversity === req.params.id);
   res.json({ university, hostels: relatedHostels });
+});
+
+router.get('/faqs', (req, res) => {
+  res.json(faqs);
 });
 
 module.exports = router;

@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import { DollarSign } from 'lucide-react';
+import { User} from 'lucide-react';
 
 export default function UniversityDetail() {
   const { id } = useParams();
@@ -16,7 +20,10 @@ export default function UniversityDetail() {
   const { university, hostels } = details;
 
   return (
-    <div className="max-w-full mx-auto">
+
+    <>
+    <Navbar/>
+      <div className="max-w-full mx-auto pt-4.5" >
       <div style={{display:"flex",justifyContent:"center",alignItems:"center",justifyItems:"center",background:"#80C8EA",height:"30vh", flexDirection:"column"}}>
         <h1 style={{color:"#155CDE", fontWeight:"bold", fontSize: '56px'}}>{university.name}</h1>
       <p className="mt-2">{university.about}</p>
@@ -43,18 +50,23 @@ export default function UniversityDetail() {
       </a>
       </div>
 
-      <h2 className="text-xl font-bold mt-6">Nearby Hostels</h2>
+      <div style={{display:"flex",textAlign:"center",justifyContent:"center",marginTop:"20px"}}>
+        <h2 style={{fontSize:"45px",fontWeight:"bold"}}>Nearby Hostels</h2>
+
+      </div>
       <div className="space-y-4 mt-2">
         {hostels.map((hostel, index) => (
-          <div key={index} className="border p-4 rounded shadow">
-            <h3 className="text-lg font-semibold">{hostel.name}</h3>
-            <p>Distance: {hostel.distance}</p>
-            <p>Price: {hostel.price}</p>
+          <div key={index} className=" p-4 rounded shadow">
+            <h3 style={{fontSize:"20px",fontWeight:"bold"}}>{hostel.name}</h3>
+            <p>Distance: {hostel.distance} from {university.name}</p>
+            <p className="inline-flex">Price: {hostel.price} <DollarSign className=" text-green-600" /></p>
             <p>Mess: {hostel.mess ? "Available" : "Not Available"}</p>
-            <p>Room Type: {hostel.sharing}</p>
+            <p className="inline-flex">Room Type: {hostel.sharing} <User style={{color:"blue"}}/></p>
           </div>
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
