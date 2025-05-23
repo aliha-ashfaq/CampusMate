@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Comfort Hostel",
+    "nearUniversity": "ucp",
+    "distance": "0.5 km",
+    "price": "Rs. 15,000/month",
+    "mess": true,
+    "sharing": "2-person"
+  },
+  {
+    "name": "Elite Hostel",
+    "nearUniversity": "lums",
+    "distance": "1 km",
+    "price": "Rs. 25,000/month",
+    "mess": true,
+    "sharing": "Single"
+  }
+]

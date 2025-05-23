@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ucp",
+    "name": "University of Central Punjab",
+    "location": "Lahore",
+    "budget": 800000,
+    "requiredMarks": 80,
+    "website": "https://www.ucp.edu.pk",
+    "courses": ["BSCS", "BBA", "BSSE"],
+    "fee": "Rs. 200,000/year",
+    "about": "UCP is a leading private university in Lahore.",
+    "image": "/images/UCP-Main.webp"
+  },
+  {
+    "id": "lums",
+    "name": "LUMS",
+    "location": "Lahore",
+    "budget": 1500000,
+    "requiredMarks": 90,
+    "website": "https://www.lums.edu.pk",
+    "courses": ["CS", "EE", "Economics"],
+    "fee": "Rs. 500,000/year",
+    "about": "LUMS is a prestigious institution known for academic excellence.",
+    "image": "https://www.lums.edu.pk/sites/default/files/styles/landscape_744x420/public/2020-06/cover_4.jpg"
+  }
+]
